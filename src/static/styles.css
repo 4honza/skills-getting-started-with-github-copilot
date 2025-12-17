@@ -9,7 +9,49 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 8px;
-} 
+}
+
+/* Participants list: hide bullets and style items */
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-radius: 4px;
+}
+
+.remove-participant {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #c62828;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.05s;
+}
+
+.remove-participant:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+  transform: translateY(-1px);
+}
+
+.participant-email {
+  color: #444;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+
 
 body {
   font-family: Arial, sans-serif;
